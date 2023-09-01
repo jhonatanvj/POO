@@ -20,7 +20,9 @@ public class AplMain {
 		System.out.println(a.nombre + a.esMayor(b) + " que " + b.nombre);
 		a.Saludar();
 		a.Saludar(b);
-
+		a.Cualletraesmayor(b);
+	char letra=a.nombre.charAt(3);
+		System.out.println(letra);
 	}
 
 }

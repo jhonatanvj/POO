@@ -39,16 +39,35 @@ public class Persona {
 		}
 
 	}
-	
+
 	public void Saludar() {
 		System.out.println("Hola a todos");
+
+	}
+
+	public void Saludar(Persona x) {
+
+		System.out.println("Hola " + x.nombre);
+
+	}
+	public void Cualletraesmayor(Persona x) {
+		
+		char ultimaletra1 = nombre.charAt(nombre.length() - 1);
+        char ultimaletra2 = x.nombre.charAt(x.nombre.length() - 1);
+        
+        if (ultimaletra1 < ultimaletra2) {
+            System.out.println("'" + ultimaletra1 + "' está antes en el abecedario que '" + ultimaletra2 + "'");
+        } else if (ultimaletra2 < ultimaletra1) {
+            System.out.println("'" + ultimaletra2 + "' está antes en el abecedario que '" + ultimaletra1 + "'");
+        } else {
+            System.out.println("Ambas letras son iguales en el abecedario: '" + ultimaletra1 + "'");
+        }
+    }
+		
+		
+		
 		
 	}
 	
-public void Saludar(Persona x) {
 	
-	System.out.println("Hola "+x.nombre);
-	
-	
-}
-}
+
