@@ -1,1 +1,1 @@
-# POO
+# Ejercicios realizados en clase pa
