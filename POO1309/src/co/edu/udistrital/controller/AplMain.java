@@ -33,8 +33,14 @@ public class AplMain {
 
 			if (n == 1) {
 				String nombre1;
-				nombre1=leer.nextLine();
-				d[i] = new Profesor(nombre1,60, 12, "Contabilidad");
+				int horas1;
+				int edad1;
+				String espe1;
+				nombre1=leer.next();
+				horas1=leer.nextInt();
+				edad1=leer.nextInt();
+				espe1=leer.next();
+				d[i] = new Profesor(nombre1,horas1, edad1,espe1);
 
 			} else {
 				 d[i] = new Estudiante("Ana", 21, "Economia");
