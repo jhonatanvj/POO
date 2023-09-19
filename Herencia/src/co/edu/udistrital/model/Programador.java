@@ -4,11 +4,11 @@ public class Programador extends Empleado {
 
 	private String lenguaje;
 	private int numerodelineas;
-	private double salarion=salario*0.15;
+	private double salarion=(salario*0.15)+salario;
 	
 
-	public Programador(String pnombre, int pedad, int pcedula, float psalario, String plenguaje, int pnumerodelineas) {
-		super(pnombre, pedad, pcedula, psalario);
+	public Programador(String pnombre, String pcargo, int pedad, int pcedula, int psalario, String plenguaje, int pnumerodelineas) {
+		super(pnombre,pcargo, pedad, pcedula, psalario);
 		lenguaje = plenguaje;
 		numerodelineas = pnumerodelineas;
 		
@@ -16,8 +16,8 @@ public class Programador extends Empleado {
 
 	@Override
 	public String toString() {
-		return super.toString() + "\nLenguaje de Programación Dominante=" + lenguaje
-				+ "\nNúmero de Líneas de Código por hora=" + numerodelineas+"\nNuevo salario= "+
+		return super.toString() + "\nLenguaje de Programacinn Dominante=" + lenguaje
+				+ "\nNumero de Líneas de Codigo por hora=" + numerodelineas+"\nNuevo salario= "+
 				salarion;
 	}
 

@@ -4,9 +4,10 @@ public class Directivo extends Empleado {
 
 	private int experiencia;
 	private String area;
+	private double salarion=(salario*0.35)+salario;
 
-	public Directivo(String pnombre, int pedad, int pcedula, float psalario, int pexperiencia, String parea) {
-		super(pnombre, pedad, pcedula, psalario);
+	public Directivo(String pnombre,String pcargo, int pedad, int pcedula, int psalario, int pexperiencia, String parea) {
+		super(pnombre,pcargo, pedad, pcedula, psalario);
 		experiencia = pexperiencia;
 		area = parea;
 
@@ -14,7 +15,8 @@ public class Directivo extends Empleado {
 	@Override
 	public String toString() {
 		return super.toString() + "\nRegistro de años de experiencia=" +experiencia
-				+ "\nArea del cual están encargados=" + area;
+				+ "\nArea del cual están encargados=" + area+"\nNuevo salario= "+
+						salarion;
 	}
 
 	public int getExperiencia() {

@@ -5,20 +5,23 @@ public class Empleado {
 	protected int edad;
 
 	protected int cedula;
-	protected float salario;
+	protected int salario;
+	protected String cargo;
 
-	public Empleado(String pnombre, int pedad, int pcedula, float psalario) {
+	public Empleado(String pnombre, String pcargo, int pedad, int pcedula, int psalario) {
 
 		nombre = pnombre;
 		edad = pedad;
 		cedula = pcedula;
 		salario = psalario;
+		cargo = pcargo;
 
 	}
 
 	@Override
 	public String toString() {
-		return "Nombre= " + nombre + ", \nEdad=" + edad + ", \nCedula=" + cedula + ", \nSalario=" + salario;
+		return "Nombre= " + nombre + "\nCargo=" + cargo + "\nEdad=" + edad + "\nCedula=" + cedula + "\nSalario="
+				+ salario;
 	}
 
 	public int getEdad() {
@@ -45,16 +48,12 @@ public class Empleado {
 		this.cedula = cedula;
 	}
 
-	public float getSalario() {
+	public int getSalario() {
 		return salario;
 	}
 
 	public void setSalario(int salario) {
 		this.salario = salario;
 	}
-	
-	
-	
-	
 
 }

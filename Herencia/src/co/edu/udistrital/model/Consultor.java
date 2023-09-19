@@ -4,9 +4,10 @@ public class Consultor extends Empleado {
 
 	private int aniosexperiencia;
 	private int equipos;
+	private double salarion=(salario*0.25)+salario;
 
-	public Consultor(String pnombre, int pedad, int pcedula, float psalario, int paniosexperiencia, int pequipos) {
-		super(pnombre, pedad, pcedula, psalario);
+	public Consultor(String pnombre,String pcargo, int pedad, int pcedula, int psalario, int paniosexperiencia, int pequipos) {
+		super(pnombre,pcargo, pedad, pcedula, psalario);
 
 		aniosexperiencia = paniosexperiencia;
 		equipos = pequipos;
@@ -16,7 +17,8 @@ public class Consultor extends Empleado {
 	@Override
 	public String toString() {
 		return super.toString() + "\nRegistro de años de experiencia=" +aniosexperiencia
-				+ "\nequipos de desarrollo ha liderado=" + equipos;
+				+ "\nEquipos de desarrollo ha liderado=" + equipos+"\nNuevo salario="+
+						salarion;
 	}
 
 	public int getAniosexperiencia() {
